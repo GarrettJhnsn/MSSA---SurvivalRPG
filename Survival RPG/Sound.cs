@@ -86,16 +86,16 @@ namespace Survival_RPG
                     sfx.URL = @"C:\Users\garre\Desktop\MSSA\SurvivalRPG\MSSA-Week-1---SurvivalRPG\Survival RPG\sfx\melee_attack1_master.wav";
                     sfx.controls.play();
                 }
-                else if (x == 3)
-                {
-                    sfx.URL = @"C:\Users\garre\Desktop\MSSA\SurvivalRPG\MSSA-Week-1---SurvivalRPG\Survival RPG\sfx\victorious1.wav";
-                    sfx.controls.play();
-                }
-                else if (x == 4)
-                {
-                    sfx.URL = @"C:\Users\garre\Desktop\MSSA\SurvivalRPG\MSSA-Week-1---SurvivalRPG\Survival RPG\sfx\defeated1.wav";
-                    sfx.controls.play();
-                }
+                //else if (x == 3)
+                //{
+                //    sfx.URL = @"C:\Users\garre\Desktop\MSSA\SurvivalRPG\MSSA-Week-1---SurvivalRPG\Survival RPG\sfx\victorious1.wav";
+                //    sfx.controls.play();
+                //}
+                //else if (x == 4)
+                //{
+                //    sfx.URL = @"C:\Users\garre\Desktop\MSSA\SurvivalRPG\MSSA-Week-1---SurvivalRPG\Survival RPG\sfx\defeated1.wav";
+                //    sfx.controls.play();
+                //}
                 else if (x == 5)
                 {
                     sfx.URL = @"C:\Users\garre\Desktop\MSSA\SurvivalRPG\MSSA-Week-1---SurvivalRPG\Survival RPG\sfx\selection_sfx1_master.wav";
