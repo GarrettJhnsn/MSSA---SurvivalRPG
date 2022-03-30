@@ -24,7 +24,7 @@ namespace Survival_RPG
                 Player player = new Player();
 
                 //Music
-                sound.playMusic(0);
+                sound.PlayMusic(0);
 
                 //Menu
                 Menu();
@@ -33,7 +33,7 @@ namespace Survival_RPG
                 do
                 {
                     Console.Clear();
-                    sound.playMusic(2, isPlaying);
+                    sound.PlayMusic(2, isPlaying);
                     //If game.Day == 1 Intro Story Plays
                     CurrentPhase(game.Day);
 
@@ -56,7 +56,7 @@ namespace Survival_RPG
                         if (dailyEncounter == true)
                         {
 
-                            sound.playMusic(1);
+                            sound.PlayMusic(1);
                             isPlaying = false;
 
                             //Generates New Enemy With Random Health Based On Game Day
@@ -80,21 +80,21 @@ namespace Survival_RPG
                                 //If Loop To Determine Players Chosen Attack Or Inventory Or Main Menu/Quit
                                 if (userChoice == 1)
                                 {
-                                    sound.playSFX(userChoice);
+                                    sound.PlaySFX(userChoice);
                                     userChoice = player.PlayerManaAttack(player.Mana, player.DmgModifer(game.Day));
                                     player.Mana = player.ManaConsume(player.Mana);
                                     Thread.Sleep(1000);
                                 }
                                 else if (userChoice == 2)
                                 {
-                                    sound.playSFX(userChoice);
+                                    sound.PlaySFX(userChoice);
                                     userChoice = player.PlayerStaminaMeleeAttack(player.Stamina, player.DmgModifer(game.Day));
                                     player.Stamina = player.StaminaConsume(player.Stamina);
                                     Thread.Sleep(1000);
                                 }
                                 else if (userChoice == 3)
                                 {
-                                    sound.playSFX(6);
+                                    sound.PlaySFX(6);
                                     userChoice = player.PlayerStaminaBowAttack(player.Stamina, player.DmgModifer(game.Day));
                                     player.Stamina = player.StaminaConsume(player.Stamina);
                                     Thread.Sleep(1000);
@@ -138,7 +138,7 @@ namespace Survival_RPG
                                 //Checks To See If Enemy Was Killed
                                 if (enemy.Health == 0)
                                 {
-                                    sound.playSFX(3);
+                                    sound.PlaySFX(3);
 
                                     Console.WriteLine("You have defeated the enemy!");
                                     Thread.Sleep(2000);
@@ -153,8 +153,8 @@ namespace Survival_RPG
                                 //Enemy Attacks With Random Choice Through enemyChoice
                                 else if (userChoice != 6)
                                 {
-                                    sound.playSFX(enemyChoice);
-                                    int enemyAttk = enemy.EnemyAttack(enemyChoice, game.Day);
+                                    sound.PlaySFX(enemyChoice);
+                                    int enemyAttk = enemy.EnemyAttack(enemyChoice);
 
                                     //Players Health Is Updated After Attack
                                     player.Health = Combat(enemyAttk, player.Health);
@@ -164,7 +164,7 @@ namespace Survival_RPG
                                 //Checks To See If Player Health Is Equal To Zero
                                 if (player.Health == 0)
                                 {
-                                    sound.playSFX(4);
+                                    sound.PlaySFX(4);
                                     Console.WriteLine("You have been defeated... Game Over...");
                                     Console.WriteLine("You survived for {0} days...", game.Day);
                                     Thread.Sleep(2000);
@@ -275,7 +275,7 @@ namespace Survival_RPG
             try
             {
                 int userChoice = Convert.ToInt32(Console.ReadLine());
-                sound.playSFX(5);
+                sound.PlaySFX(5);
                 switch (userChoice)
                 {
                     case 1:
@@ -320,7 +320,7 @@ namespace Survival_RPG
                 {
                     //Options Are Returned To Main Game Loop Where Descisions Are Proccesed
                     userChoice = Convert.ToInt32(Console.ReadLine());
-                    selectionSound.playSFX(5);
+                    selectionSound.PlaySFX(5);
 
                     if (userChoice == 1)
                     {
@@ -414,7 +414,7 @@ namespace Survival_RPG
             try
             {
                 int userChoice = Convert.ToInt32(Console.ReadLine());
-                menuSound.playSFX(5);
+                menuSound.PlaySFX(5);
 
                 switch (userChoice)
                 {

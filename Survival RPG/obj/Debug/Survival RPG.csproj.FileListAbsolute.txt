@@ -9,3 +9,14 @@ C:\Users\garre\Desktop\MSSA\Survival RPG\Survival RPG\obj\Debug\Survival RPG.pdb
 C:\Users\garre\Desktop\MSSA\Survival RPG\Survival RPG\obj\Debug\Interop.MediaPlayer.dll
 C:\Users\garre\Desktop\MSSA\Survival RPG\Survival RPG\obj\Debug\Interop.WMPLib.dll
 C:\Users\garre\Desktop\MSSA\Survival RPG\Survival RPG\obj\Debug\Survival RPG.csproj.ResolveComReference.cache
+C:\Users\garre\Desktop\MSSA\SurvivalRPG\MSSA-Week-1---SurvivalRPG\Survival RPG\bin\Debug\Survival RPG.exe.config
+C:\Users\garre\Desktop\MSSA\SurvivalRPG\MSSA-Week-1---SurvivalRPG\Survival RPG\bin\Debug\Survival RPG.exe
+C:\Users\garre\Desktop\MSSA\SurvivalRPG\MSSA-Week-1---SurvivalRPG\Survival RPG\bin\Debug\Survival RPG.pdb
+C:\Users\garre\Desktop\MSSA\SurvivalRPG\MSSA-Week-1---SurvivalRPG\Survival RPG\obj\Debug\Survival RPG.csproj.AssemblyReference.cache
+C:\Users\garre\Desktop\MSSA\SurvivalRPG\MSSA-Week-1---SurvivalRPG\Survival RPG\obj\Debug\Survival RPG.csproj.SuggestedBindingRedirects.cache
+C:\Users\garre\Desktop\MSSA\SurvivalRPG\MSSA-Week-1---SurvivalRPG\Survival RPG\obj\Debug\Interop.MediaPlayer.dll
+C:\Users\garre\Desktop\MSSA\SurvivalRPG\MSSA-Week-1---SurvivalRPG\Survival RPG\obj\Debug\Interop.WMPLib.dll
+C:\Users\garre\Desktop\MSSA\SurvivalRPG\MSSA-Week-1---SurvivalRPG\Survival RPG\obj\Debug\Survival RPG.csproj.ResolveComReference.cache
+C:\Users\garre\Desktop\MSSA\SurvivalRPG\MSSA-Week-1---SurvivalRPG\Survival RPG\obj\Debug\Survival RPG.csproj.CoreCompileInputs.cache
+C:\Users\garre\Desktop\MSSA\SurvivalRPG\MSSA-Week-1---SurvivalRPG\Survival RPG\obj\Debug\Survival RPG.exe
+C:\Users\garre\Desktop\MSSA\SurvivalRPG\MSSA-Week-1---SurvivalRPG\Survival RPG\obj\Debug\Survival RPG.pdb

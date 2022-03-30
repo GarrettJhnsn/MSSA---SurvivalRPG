@@ -31,7 +31,7 @@ namespace Survival_RPG
         }
 
         //Enemies Random Attack Generated In Main Game Loop Every Day. Attack DMG Returned To Be Updated With Combat();
-        public int EnemyAttack(int enemyChoice, int day)
+        public int EnemyAttack(int enemyChoice)
         {
             Random random = new Random();
 

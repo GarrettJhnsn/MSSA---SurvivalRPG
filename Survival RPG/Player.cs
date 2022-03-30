@@ -47,7 +47,7 @@ namespace Survival_RPG
             try
             {
                 int userChoice = Convert.ToInt32(Console.ReadLine());
-                sound.playSFX(5);
+                sound.PlaySFX(5);
                 switch (userChoice)
                 {
                     case 1:
@@ -73,12 +73,12 @@ namespace Survival_RPG
             //Checks To Make Sure Player Is Not At Full Health And Has At least One Potion Available
             if (Health < 100 && _hPot >= 1)
             {
-                Health = Health + 15;
+                Health += 15;
 
                 Console.WriteLine("You drink and recharge 15 health...");
                 Thread.Sleep(1000);
 
-                _hPot = _hPot - 1;
+                _hPot--;
                 if (_hPot < 0)
                     _hPot = 0;
 
@@ -107,12 +107,12 @@ namespace Survival_RPG
             //Checks To Make Sure Player Is Not At Full Mana And Has At least One Potion Available
             if (Mana < 100 && _mPot >= 1)
             {
-                Mana = Mana + 15;
+                Mana += 15;
 
                 Console.WriteLine("You drink and recharge 15 mana...");
                 Thread.Sleep(1000);
 
-                _mPot = _mPot - 1;
+                _mPot--;
                 if (_mPot < 0)
                     _mPot = 0;
 
@@ -142,12 +142,12 @@ namespace Survival_RPG
             //Checks To Make Sure Player Is Not At Full Stamina And Has At least One Potion Available
             if (Stamina < 100 && _sPot >= 1)
             {
-                Stamina = Stamina + 15;
+                Stamina += 15;
 
                 Console.WriteLine("You drink and recharge 15 stamina...");
                 Thread.Sleep(1000);
 
-                _sPot = _sPot - 1;
+                _sPot--;
                 if (_sPot < 0)
                     _sPot = 0;
 
@@ -174,9 +174,9 @@ namespace Survival_RPG
         //End Of Every Day Sleep(); Recharges All Stats By A Small Amount
         public void Sleep()
         {
-            Stamina = Stamina + 10;
-            Mana = Mana + 10;
-            Health = Health + 15;
+            Stamina += 10;
+            Mana += 10;
+            Health += 15;
 
             if (Mana > 100)
             {
@@ -284,7 +284,7 @@ namespace Survival_RPG
         public int DmgModifer(int day)
         {
             int newModifer = 0;
-            newModifer = newModifer + day;
+            newModifer += day;
             return newModifer;
         }
     }
